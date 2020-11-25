@@ -13,7 +13,7 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Invoke("DestroySelf", 3);
+        Invoke("DestroySelf", 4);
     }
     void DestroySelf(){
         Destroy(gameObject);

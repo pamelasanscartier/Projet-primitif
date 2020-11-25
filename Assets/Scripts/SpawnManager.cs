@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 
     //Variables pour le invoke
     private float startDelay = 1;
-    private float repeatRate = 3.0f;
+    private float repeatRate = 2.0f;
 
     //Aller chercher le script du Player
     private PlayerController playerControllerScript;

@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5;
     private float xLimit = 2.7f;
     private float zLimit = 69;
+    private float zLimitBegin = -47;
     private float winningLine = 66;
 
     //Variables pour le rigidbody, le saut
@@ -73,6 +74,10 @@ public class PlayerController : MonoBehaviour
         else if ( transform.position.z > zLimit)  {
             transform.position = new Vector3(transform.position.x, transform.position.y, zLimit);
         }
+        else if ( transform.position.z < zLimitBegin)  {
+            transform.position = new Vector3(transform.position.x, transform.position.y, zLimitBegin);
+        }
+        
 
         //Si le player dépasse la ligne d'arrivée, on ajoute les sons et on affiche la scène de fin nécessaire
         if(transform.position.z > winningLine){

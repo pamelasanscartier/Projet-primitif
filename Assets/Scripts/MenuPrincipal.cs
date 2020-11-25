@@ -16,6 +16,6 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void RejouerPartie(){
         //Va chercher la scène d'avant dans l'index build (j'ai mis la scène du jeu, donc ça va la chercher)
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Start");
     }
 }
